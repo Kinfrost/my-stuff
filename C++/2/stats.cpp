@@ -20,6 +20,13 @@ std::cout <<"playAgain "<< playAgain << std::endl;
 std::cout <<"lives "<< lives << std::endl;
 std::cout <<"aliensKilled "<< aliensKilled << std::endl;
 std::cout <<"engineTemp "<< aliensKilled << std::endl;
-
+int fuel;
+std::cout <<"\nHow much fuel left? ";
+std::cin >> fuel;
+std::cout <<"Amount of Fuel in tank " << fuel << std::endl;
+typedef unsigned short int ushort;
+ushort bonus = 10;
+std::cout << "\nBonus " << bonus << std::endl;
+return 0;
 
 }
