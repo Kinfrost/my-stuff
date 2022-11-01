@@ -78,6 +78,7 @@ char letter_conv(int lball) {
 
 void find_coincidence() {
   int f = 0;
+  std::cout << "Шары на этот раунд\n";
   for (int i = 0; i < ballcount; i++) {
     std::cout << letter_conv(balls[0][i]) << balls[1][i] << "\t";
     int col = balls[0][i];
@@ -93,6 +94,7 @@ void find_coincidence() {
       }
     }
   }
+  std::cout << "\n";
   if (f != 0) {
     std::cout << "\nСовпадения: ";
     for (int i = 0; i < f; i++) {
@@ -103,7 +105,7 @@ void find_coincidence() {
   } else {
     std::cout << "\nСовпадений нет";
   }
-  std::cout << "\n";
+  std::cout << "\n\n";
 }
 
 int find_win() {
@@ -138,6 +140,7 @@ int find_win() {
 }
 
 void game_result() {
+  std::cout << "\n";
   int win = find_win();
   if (win != 0) {
     std::cout << "Бинго! " << std::endl;
@@ -163,9 +166,9 @@ int main() {
   create_card();
   std::cout << "Ваша карточка бинго на эту игру" << std::endl;
   out_card();
-  std::cout << "\nХотите начать игру с этой карточкой?" << std::endl;
+  std::cout << "\nХотите начать игру с этой карточкой?";
   do {
-    std::cout << "\n1-Начать игру\n";
+    std::cout << "\n\n1-Начать игру\n";
     std::cout << "2-Пересоздать карточку\n";
     std::cout << "0-Выйти из игры\n";
     std::cout << "> ";
