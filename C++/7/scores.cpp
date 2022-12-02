@@ -3,7 +3,7 @@
 #include <cstdlib>
 #include <vector>
 #include <algorithm>
-sstd::vector<int>::const_iterator iter;
+std::vector<int>::const_iterator iter;
 std::vector<int> scores;
 
 
