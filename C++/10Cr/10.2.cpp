@@ -15,7 +15,10 @@ for (int i=0;i<cho;i++)
 }
 void Aput_in(int cho)
 {
+    for (int i=0;i<cho;i++)
+{
     numbers.push_back(rand()%1000);
+}
 }
 
 int main()
@@ -39,6 +42,9 @@ int main()
             break;
         }
     }
+
+     for (int i=0;i<cho;i++) std::cout<<numbers[i]<<" ";
+     std::cout<<std::endl;
     for (int i=0;i<cho;i++)
     {
         int buf;
